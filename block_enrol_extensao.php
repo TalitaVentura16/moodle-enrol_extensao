@@ -19,7 +19,7 @@ class block_enrol_extensao extends block_base {
 
         $this->content = new stdClass();
         $this->content->text = $this->get_extensao_content();
-        $this->content->footer = 'Footer here';
+        $this->content->footer = 'Inserir informações';
 
         return $this->content;
     }

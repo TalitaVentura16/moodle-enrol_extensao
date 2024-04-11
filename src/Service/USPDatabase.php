@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Alunos dos cursos de Extensao (Bloco)
+ * Equipe de Moodle da USP
+ * https://github.com/moodle-usp
+ */
 namespace block_enrol_extensao\Service;
 
 use PDO;
