@@ -1,15 +1,17 @@
 <?php
 
 /**
- * Alunos dos cursos de Extensao (Bloco)
+ * Alunos dos cursos de Extensao (Enrol)
  * Equipe de Moodle da USP
  * https://github.com/moodle-usp
  */
 
-class block_enrol_extensao extends block_base {
+defined('MOODLE_INTERNAL') || die();
+
+class enrol_extensao extends enrol_plugin {
     
     public function init() {
-        $this->title = "USP alunos de Extensão";
+        $this->title = get_string('pluginname', 'enrol_extensao');
     }
 
     public function get_content() {
@@ -19,13 +21,13 @@ class block_enrol_extensao extends block_base {
 
         $this->content = new stdClass();
         $this->content->text = $this->get_extensao_content();
-        $this->content->footer = 'Footer here';
+        $this->content->footer = 'Inserir informações';
 
         return $this->content;
     }
 
     private function get_extensao_content() {
-        $output = 'Inserir conteúdo do bloco aqui';
+        $output = 'Inserir conteúdo do plugin aqui';
         
         return $output;
     }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="enrol_extensao/db" VERSION="2024040103" COMMENT="XMLDB file for Moodle block_enrol_extensao"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLES>
+        <TABLE NAME="block_enrol_extensao" COMMENT="Tabela para as informacoes dos alunos dos cursos de extensao">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="16" NOTNULL="true" SEQUENCE="true"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+        </TABLE>
+        <TABLE NAME="enrol_estudantes" COMMENT="Para armazenar informacoes dos estudantes dos cursos de extensao.">
+            <FIELDS>
+                <FIELD NAME="nompes" TYPE="string" LENGTH="30" NOTNULL="true" SEQUENCE="false" COMMENT="Nome do estudante"/>
+                <FIELD NAME="codpes" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="Numero USP do estudante"/>
+                <FIELD NAME="codema" TYPE="string" LENGTH="30" NOTNULL="true" SEQUENCE="false" COMMENT="Email do estudante"/>
+                <FIELD NAME="condcurceu" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="Codigo do curso ao qual o estudante esta inscrito"/>
+            </FIELDS>
+        </TABLE>
+    </TABLES>
+</XMLDB>

@@ -3,4 +3,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'block_enrol_extensao';
-$plugin->version = 2024040103;
+$plugin->version = 2024041103;
